@@ -20,7 +20,6 @@ while True:
     else:
         fetched = fetched + sets
         print("So far dataset is %s records, taking a break." % len(fetched))
-        time.sleep(3)
 
 with open("out/%s" % args.filename_out, 'a') as f:
     print("Received %s records." % len(fetched))
